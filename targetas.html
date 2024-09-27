@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="stylesheet">
+    <link rel="icon" type="image/png"  href="https://i.postimg.cc/JnXP5PQk/favicon-png.png ](https://postimg.cc/R6M7M1yS)">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'> 
+    <title>PORTAFOLIO</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+</head>
+<style>
+   *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+    body{ 
+        background: lightslategray;
+    }
+    /*prueba de grid*/
+
+   
+   /*pantalla grande*/
+  
+   @media (min-width: 500px) and (min-width:1200px){
+    .layout {
+      display: grid;
+      grid-template-rows: 150px 150px auto 100px ;
+      grid-template-columns: 550px auto 1px;
+      grid-template-areas: 
+      'header header  header'
+      'main main main'
+      ' aside article article'
+      'footer article article ';
+    }
+    @media  (max-width: 600px) {
+      header {
+        grid-area: header;
+        background-color: red;
+      }
+    }
+    @media (min-width:700px) {
+      body {
+        background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+      }
+      
+    }
+    header {
+      grid-area: header;
+      width: 100%;
+      padding-left: 20px;
+      justify-content: start;
+    }
+    header img {
+      width: 70px;
+      margin-left: 30px;
+    }
+    header #otra {
+      font-size: 50px;
+      display: inline-flex;
+      padding: 20px;
+      
+    }
+    /*videos = ASIDE*/
+    aside {
+      grid-area: aside;
+      display:block;
+      justify-content: center;
+      height: 50px;
+
+    }
+   
+    /* main carrusel*/
+    main {
+      grid-area: main;
+
+    }
+   .slider-box {
+    width: 50%;
+  }
+ 
+    footer {
+      grid-area: footer;
+      display: flex;
+      margin-top: -370px;
+    }
+   
+ 
+
+    /* recetario*/
+    .widget {
+      grid-area: main;
+    }
+   }
+
+
+    /* FINNNN prueba de grid*/
+     @media  (max-width: 900px) {
+ header {
+  
+  background-image: url('https://i.postimg.cc/xTjyPsrp/tienda.jpg');
+      display: flex;
+      background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+ }
+    h1{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size:clamp(
+      9.5rem,5vw,4rem ); 
+}
+h1 {
+    display: flex;
+     color:white;
+     font-size:clamp(
+      3.5rem,2vw,6rem );
+     border-radius: 10px;
+} 
+h5 {
+    color: white;
+    font-size: 35px;
+  }
+
+#otra{
+  display: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  font-size:clamp(
+      2.5rem,5vw,10rem );
+}
+/*videos de youtube*/
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+video  {
+  display: flex;
+    width: 100%;
+    object-fit: cover;
+    justify-content: center;
+   
+}
+
+.nav-button {
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#prev {
+  
+    left: 35%;
+}
+
+#next {
+    right: 35%;
+}
+
+
+
+
+/*fin de VIDEO*/
+ /*nuestros productos*/
+#productos {
+  display: flex;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'century gothic';
+    color: #ffffcc;
+    text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff, 
+                 0 0 20px green, 
+                 0 0 30px green, 
+                 0 0 40px green, 
+                 0 0 55px green, 
+                 0 0 70px green;
+  justify-content: center;
+}
+ #productos svg {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'century gothic';
+    color: #ffffcc;
+    text-shadow: 0 0 5px #fff,
+                 0 0 10px #fff, 
+                 0 0 20px green, 
+                 0 0 30px green, 
+                 0 0 40px green, 
+                 0 0 55px green, 
+                 0 0 70px green;
+  justify-content: center;
+}
+           
+/*emogi*/
+@keyframes rotate-emoji {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+ 
+ 
+  .main ,li {
+    display:inline-flex;
+    text-align: center;
+    position: relative;  
+  }
+  /* cookies*/
+  .img-container .map-responsive iframe  {
+  height: 100px;
+ }
+.logo {
+    display: flex;
+    object-fit: contain;
+    margin-left: 0px;
+    min-height: 100px;
+    padding-top: 15px;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#t{
+    display: flex;
+    padding-right: 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
+ 
+@media (max-width:700px){
+   .logo{
+    flex-direction: column;
+   } 
+}
+/*titulo formulario*/
+h2 {
+  font-size:30px;
+  text-align: center;
+  background:whitesmoke;
+  color: black;
+  justify-content:center;
+  border-radius: 0px;
+  
+}
+/*horno y caertel*/
+.container1 {
+    display: wrap;
+    justify-content: start;
+    height: 150px;
+    background:transparent ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+h3{
+  font-size:clamp(
+    1.5rem,2vw,4rem );
+  
+  
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+aside {
+  background-image:url('https://i.postimg.cc/gx36vtwz/tienda-2.jpg');
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+/*recetario*/
+.row  {
+    margin: 0px 0px;
+    padding: 2px;
+}
+.row >.column {
+    padding: 2px;
+}
+.column {
+    float: left;
+    width: 25%;
+    
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.content  {
+  font-size: 30px;
+  font-family: cursive;
+    padding: 5px;
+    border: 1px solid white;
+}
+@media screen and (min-width: 1250px) {
+  .column{
+    width: 25%;
+    
+  }
+  }  
+@media screen and (max-width: 850px) {
+  .column{
+    width: 50%;
+  }  
+}
+@media screen and (max-width: 400px) {
+    .column{
+      width: 100%;
+    }  
+  }
+ 
+        details{
+            background: white;
+            text-align: center;
+            
+        }
+        details summary{
+            font-weight: 400;
+            list-style: none;
+            cursor: pointer;
+        }
+        details[open] summary {
+            font-weight: 60px;
+        }
+        details p {
+            background:transparent;
+        }
+        details {
+            position: relative;
+        }
+         details summary::before {
+            position: absolute;
+            content:"👇" ;
+            font-size: 1.75rem;
+            top:1px;
+            right: -5px;
+        }
+        summary  {
+          font-size: 30px;
+        }
+        
+          iframe {
+            height: 600px;
+          }
+            #imagen0{
+              font-size:35px ;
+            }
+
+        details[open] summary::before {
+    -webkit-animation: rotate-emoji 0.6s ease-in-out both;
+    animation: rotate-emoji 0.6s ease-in-out both;
+}
+/*emogi*/
+@keyframes rotate-emoji {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  font-size:clamp(
+      1.5rem,2vw,4rem );
+}
+/*formulario*/
+ 
+    form {
+        background-color: #fff;
+        max-width: 500px;
+        margin: 5px auto;
+        box-shadow: 2px 5px 10px rgb(red, green, blue);
+    }
+    .form-control{
+text-align: left;
+margin-bottom: 5px;
+    }
+    .form-control label{
+        display: block;
+        margin-bottom: 1px;
+    }
+    .form-control input,.form-control select,.form-control textarea {
+        border: 1px solid #777;
+        border-radius: 2px;
+        font-family: inherit;
+        padding: 10px;
+        display: block;
+        width: 90%;
+    }
+    .form-control input[type="radio"],.form-control input[tipe="checkbox"]{
+        display: inline-block;
+        width: auto;
+    }
+ /*  nuestros productos */
+  .slider-box {
+    width: 80%;
+    height: 150px;
+    margin-left: 20px;
+    justify-content: center;
+    overflow: hidden;
+
+  }
+  .slider-box ul {
+    display: flex;
+    width: 500%;
+    animation: slide 9s infinite alternate ease-in-out;
+  }
+  .slider-box li {
+    width: 50%;
+    list-style: none;
+    position: relative;
+  }
+  @media  (min-width:500px){
+    .slider-box ul {
+    display: flex;
+    width: 500%;
+    animation: slide 9s infinite alternate ease-in-out;
+    height: 130px;
+  }
+  
+    .slider-box ul li {
+    width: 40%;
+    list-style: none;
+    position: relative;}
+
+    .slider-box img {
+      width: 50%;
+    }
+  }
+  .slider-box img {
+    width: 100%;
+    padding: 5px;
+   height: auto;
+   
+  }
+  @keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    60% {margin-left: -200%;}
+    70% {margin-left: -250%;}
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+
+  }
+  
+
+/*recetas*/
+h6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-top: 0;
+  text-align: center;
+  color: black;
+  font-size: 15px;
+}
+ /*estrllas*/
+ .valoracion {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.valoracion input {
+    position: absolute;
+    top: -100px;
+}
+
+
+.valoracion label {
+    float: right;
+    color: #c1b8b8;
+    font-size: 70px; 
+}
+
+.valoracion label:hover,
+.valoracion label:hover ~ label,
+.valoracion input:checked ~ label {
+    color: #ffff00;
+}
+a svg {
+  transition:all .5s ease;
+  &:hover{
+    transform:rotate(180deg);
+  }
+  }
+  footer  {
+    display: flex;
+  color:black;
+  text-align:center;
+  
+  cursor: pointer;
+  font-size: 30px;
+}
+footer.bottom {
+  bottom:10px;
+  }
+ 
+
+
+/*consentimiento de cookies*/
+
+ .buttons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buttons button:hover {
+  transform: scale(0.9);
+  color: #f8553f;
+}
+
+.buttons .item {
+  margin:  10px;
+}
+
+.buttons a {
+  color: black;
+  text-decoration: none;
+}
+button{
+        background-color:green;
+        border: 1px solid #777;
+        border: 2px;
+        font-size: inherit;
+        font-size: 21px;
+        display: block;
+        width: 80%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+.buttons a:hover {
+  color: #f8553f;
+}
+p {
+  font-family: cursive;
+  }
+  .window-notice {
+    background: rgba(33, 41, 52, .85);
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    position: fixed;
+    z-index: 999;
+}
+.window-notice .content {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 600px;
+    min-width: 320px !important;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+</style>
+<body>
+ <div class="layout">
+    <header class="header">
+     
+        <div class="iframe" id="otra"> 
+            <h1>Panaderia Pytxy & Marta </h1>
+
+            <a href="tel:+34638703618"><h5>638703618</h5></a>
+<a href="https://wa.me/34638703618/?text=Hola, puedes ayudarme?" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 256 258">
+  <defs>
+    <linearGradient id="logosWhatsappIcon0" x1="50%" x2="50%" y1="100%" y2="0%">
+      <stop offset="0%" stop-color="#1faf38" />
+      <stop offset="100%" stop-color="#60d669" />
+    </linearGradient>
+    <linearGradient id="logosWhatsappIcon1" x1="50%" x2="50%" y1="100%" y2="0%">
+      <stop offset="0%" stop-color="#f9f9f9" />
+      <stop offset="100%" stop-color="#fff" />
+    </linearGradient>
+  </defs>
+  <path fill="url(#logosWhatsappIcon0)" d="M5.463 127.456c-.006 21.677 5.658 42.843 16.428 61.499L4.433 252.697l65.232-17.104a122.994 122.994 0 0 0 58.8 14.97h.054c67.815 0 123.018-55.183 123.047-123.01c.013-32.867-12.775-63.773-36.009-87.025c-23.23-23.25-54.125-36.061-87.043-36.076c-67.823 0-123.022 55.18-123.05 123.004" />
+  <path fill="url(#logosWhatsappIcon1)" d="M1.07 127.416c-.007 22.457 5.86 44.38 17.014 63.704L0 257.147l67.571-17.717c18.618 10.151 39.58 15.503 60.91 15.511h.055c70.248 0 127.434-57.168 127.464-127.423c.012-34.048-13.236-66.065-37.3-90.15C194.633 13.286 162.633.014 128.536 0C58.276 0 1.099 57.16 1.071 127.416m40.24 60.376l-2.523-4.005c-10.606-16.864-16.204-36.352-16.196-56.363C22.614 69.029 70.138 21.52 128.576 21.52c28.3.012 54.896 11.044 74.9 31.06c20.003 20.018 31.01 46.628 31.003 74.93c-.026 58.395-47.551 105.91-105.943 105.91h-.042c-19.013-.01-37.66-5.116-53.922-14.765l-3.87-2.295l-40.098 10.513z" />
+  <path fill="#fff" d="M96.678 74.148c-2.386-5.303-4.897-5.41-7.166-5.503c-1.858-.08-3.982-.074-6.104-.074c-2.124 0-5.575.799-8.492 3.984c-2.92 3.188-11.148 10.892-11.148 26.561c0 15.67 11.413 30.813 13.004 32.94c1.593 2.123 22.033 35.307 54.405 48.073c26.904 10.609 32.379 8.499 38.218 7.967c5.84-.53 18.844-7.702 21.497-15.139c2.655-7.436 2.655-13.81 1.859-15.142c-.796-1.327-2.92-2.124-6.105-3.716c-3.186-1.593-18.844-9.298-21.763-10.361c-2.92-1.062-5.043-1.592-7.167 1.597c-2.124 3.184-8.223 10.356-10.082 12.48c-1.857 2.129-3.716 2.394-6.9.801c-3.187-1.598-13.444-4.957-25.613-15.806c-9.468-8.442-15.86-18.867-17.718-22.056c-1.858-3.184-.199-4.91 1.398-6.497c1.431-1.427 3.186-3.719 4.78-5.578c1.588-1.86 2.118-3.187 3.18-5.311c1.063-2.126.531-3.986-.264-5.579c-.798-1.593-6.987-17.343-9.819-23.64" />
+</svg><a href="https://wa.me/34638703618/?text=Hola, puedes ayudarme?" target="_blank"></a>
+</a>
+
+          <div class="img-container">
+           <img src='https://i.postimg.cc/Jz7Wtzm2/CARTEL-EN-COLRE.jpg' width="80%" alt='CARTEL-EN-COLRE'/></a>
+          </div>
+       
+        </header>
+        <aside>
+          <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    
+                      <iframe width="100%" height="200" src="https://www.youtube.com/embed/JQAVYZF1tOE?si=IQB_MwnWZ2eD_gfX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+                    </video>
+                </div>
+                <div class="slide">
+                  <iframe width="450px" height="200" src="https://youtube.com/embed/2trgj_dHSo4?si=NYsRugptMyzNGX3-" title="YouTube video player"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; enctyped-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+                   
+                     
+                    </video>
+                </div>
+                <div class="slide">
+                  <iframe width="450px" height="200" src="https://youtube.com/embed/j3ReDsG_97k?si=-WH7__a-GPR2kwgR" title="YouTube video player"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; enctyped-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+                   
+                       
+                    </video>
+                </div>
+            </div>
+            <button id="prev" class="nav-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 512 512">
+                <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M249.38 336L170 256l79.38-80m-68.35 80H342" />
+                <path fill="none" stroke="white" stroke-miterlimit="10" stroke-width="32" d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192s192-86 192-192Z" />
+              </svg>
+            </button>
+            <button id="next" class="nav-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 512 512">
+                <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M262.62 336L342 256l-79.38-80m68.35 80H170" />
+                <path fill="none" stroke="white" stroke-miterlimit="10" stroke-width="32" d="M256 448c106 0 192-86 192-192S362 64 256 64S64 150 64 256s86 192 192 192Z" />
+              </svg>
+            </button>
+        </div>
+        
+      
+                
+            
+          
+          <div id="productos">
+            <a href=" https://photos.app.goo.gl/Yb5bJFF3LvDU7KrK9"> PRODUCTOS
+              <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                <g fill="none" fill-rule="evenodd">
+                  <path d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z" />
+                  <path fill="currentColor" d="M12 3a4 4 0 0 1 3.446 6.033a3 3 0 0 1 2.549 2.788L18 12v.21l1.713-1.056a1.5 1.5 0 0 1 2.282 1.148l.005.129v5.138a1.5 1.5 0 0 1-2.175 1.34l-.112-.063L18 17.79V18a3 3 0 0 1-2.824 2.995L15 21H5a3 3 0 0 1-2.995-2.824L2 18v-6a3 3 0 0 1 1.545-2.624a3.5 3.5 0 0 1 5.138-4.612A4 4 0 0 1 12 3m3 8H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-6a1 1 0 0 0-1-1m5 2.326l-2 1.232v.883l2 1.232zM12 5a2 2 0 1 0 0 4a2 2 0 0 0 0-4M6.5 6a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3" />
+                </g>
+              </svg>
+            </a> 
+           </div>
+           
+          </aside>
+            
+             <main>
+              
+             <div class="slider-box">
+              <ul>
+              <li><img src="https://i.postimg.cc/JGJFr2T5/mante.jpg"  alt="Imagen 1"></li>
+              <li><img src="https://i.postimg.cc/rKnDpfKz/mada.jpg" alt="Imagen 2"></li>
+              <li><img src="https://i.postimg.cc/8sd6MHr1/hogaza.jpg" alt="Imagen 3"></li>
+              <li><img src="https://i.postimg.cc/0bpc6D9m/IMG-20231028-192409-107.jpg" alt="Imagen 4"></li>
+              <li><img src="https://i.postimg.cc/mchYSHWm/bagette-copia.jpg" alt="Imagen 5"></li>
+              <li><img src="https://i.postimg.cc/14f9Ry1h/yo-2.jpg" alt="Imagen 6"></li>
+              <li><img src="https://i.postimg.cc/gxKsGVJJ/IMG20231111093257.jpg" alt="Imagen7"></li>
+              <li><img src="https://i.postimg.cc/fJB33ZmY/IMG-20231102-201907.jpg" alt="Imagen 8"></li>
+              <li><img src="https://i.postimg.cc/94GJTJV3/mante.jpg" alt="Imagen 9"></li>
+              <li><img src="https://i.postimg.cc/bSgNvwXy/IMG-20231028-192409-107.jpg" alt="Imagen 10"></li>
+              <li><img src='https://i.postimg.cc/sGGpHPnc/tortas.jpg'  alt='tortas'></li>
+              <li><img src='https://i.postimg.cc/zyyx8rPd/tienda.jpg'  alt='tienda'></li>
+              <li><img src='https://i.postimg.cc/gx36vtwz/tienda-2.jpg' alt='tienda-2'><li>
+              <li><img src='https://i.postimg.cc/mzKbpRq0/roscones.jpg' alt='roscones'></li>
+              <li><img src='https://i.postimg.cc/LnK9z9jP/roscos.jpg' alt='roscos'></li>
+              <li><img src='https://i.postimg.cc/hJfWk69g/furgoneta.jpg'alt='furgoneta'></li>
+              <li><img src='https://i.postimg.cc/3kGb2hCk/galletas.jpg' alt='galletas'></li> 
+              </ul>
+            </div>
+          </main>
+            <div class="side2">
+         
+              <div class="img-container">
+                <div class="map-responsive">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.0812157279684!2d-5.902636924180929!3d42.2981324390122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd39db65551e2df1%3A0x334bef714619eef0!2sPanader%C3%ADa%20de%20Vega%20%22Pitxi%22!5e0!3m2!1ses!2ses!4v1696011317978!5m2!1ses!2ses" width="80%" height="20px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h4>Encuentranos en la calle Imperial n2 de La Bañeza</h4>
+               
+                </div>
+              </div> 
+              <article>             
+    <div class="widget">
+         <h1 class="titulo">RECETARIO</h1>
+        
+         <div id="section2"></div>
+
+        
+    
+        <div class="row">
+          
+          <div class="column">
+            <div class="content">
+                <img src='https://i.postimg.cc/8sd6MHr1/hogaza.jpg' width="100%" height="350px" alt='hogaza'>
+                <h3>
+                    <a href="#">Hogaza</a>
+                </h3>
+                <div class="content"></div>
+                <a href="https://docs.google.com/document/d/1ryLEtV6urfy4lnvsEop2Z6bHBDIaHqINE7EW_ONrFss/edit?usp=sharing" class="btn">RECETA</a>
+
+              
+            
+    </div>
+</div>
+        <div class="column">
+            <div class="content">
+                <img src='https://i.postimg.cc/mchYSHWm/bagette-copia.jpg'  width="100%" height="350px" alt='bagette-copia'>
+                <h3>
+                    <a href="#">Bagette</a> 
+                </h3>
+                <div class="content"></div>
+               <a href=" https://docs.google.com/document/d/1fqGRDUnBjP6a_yQ-xp7sFAqWS9pv1W6gRMUP20wZ1L0/edit?usp=sharing" class="btn">RECETA</a>
+            </div>   
+        </div>
+            <div class="column">
+                <div class="content">
+                    <img src='https://i.postimg.cc/HjvSnV0d/pastas.jpg' width="100%" height="350px" alt='hogaza'>
+                    <h3>
+                        <a href="#">Pastas </a>
+                    </h3>
+                    <div class="content"></div>
+                    <a href="https://docs.google.com/document/d/1m6EtBIiEgQ9q8YeryfYhUi5PtplcJQRsXfrnlcsDzD8/edit?usp=sharing" class="btn">RECETA</a>
+                  </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src='https://i.postimg.cc/pmxrhYtF/hojaldre-1.jpg'  width="100%" height="350px" alt='bagette-copia'>
+                    <h3>
+                        <a href="#">Croissant</a> 
+                    </h3>
+                    <div class="content"></div>
+                    <a href="https://docs.google.com/document/d/180Ccemjciwzt4ZIah5mQcGjs9-Nr_ZmDkQMy1N2SqIc/edit?usp=sharing" class="btn">RECETA</a>
+                   
+                </div>
+            </div>
+              <div class="column">
+                <div class="content">
+                    <img src='https://i.postimg.cc/rKnDpfKz/mada.jpg'  width="100%"  height="350px" alt='mada'>
+                    <h3>
+                        <a href="#">Magdalenas</a>
+                    </h3>
+                    <div class="content"></div>
+                    <a href="https://docs.google.com/document/d/1BTtB43M7n-05dUvaF24IpID4S5l_nda8-FLGPNeLaBk/edit?usp=sharing" class="btn">RECETA</a>
+                   
+                </div>
+              </div>
+               <div class="column">
+                <div class="content">
+                    <img src='https://i.postimg.cc/JGJFr2T5/mante.jpg'  width="100%" height="350px" alt='mante'>
+                    <h3>
+                        <a href="#">Mantecadas</a>
+                    </h3>
+                    <div class="content"></div>
+                    <a href="https://docs.google.com/document/d/1tGb2ET-ZZtgTrCx37uTaPoURhEN5QSqYHbN4uvQcctA/edit?usp=sharing" class="btn">RECETA</a>
+                </div>
+               </div>
+               <div class="column">
+                <div class="content">
+                    <img src='https://i.postimg.cc/9DfgNThq/bollo.jpg'  width="100%" height="350px" alt='mante'>
+                    <h3>
+                        <a href="#">Bollos</a>
+                    </h3>
+                    <div class="content"></div>
+                    <a href="https://docs.google.com/document/d/1xbD5wePcKZVFY7iLeDghjdKUtMhURBJ4AtGyuqauZ-A/edit?usp=sharing" class="btn">RECETA</a>
+                  
+
+                       
+                </div>
+               </div>
+               <div class="column">
+                <div class="content">
+                  <img src='https://i.postimg.cc/p9HxFq8t/cookies.jpg'  width="100%" height="350px" alt='mante'>
+                    <h3>
+                        <a href="#">Cookies</a>
+                    </h3>
+                    <div class="content"></div>
+                    <a href="https://docs.google.com/document/d/1PFWpvzacZ2CaPNhIsxj1rSfgN4cEhoenUfk8HlRjM3w/edit?usp=sharing" class="btn">RECETA</a>
+                   
+                </div>
+               </div>
+        </div>
+       
+    </div>
+      
+          </div>
+            </div>
+          </div>
+ </div>
+</article>
+       <footer>
+        <section id="section3"></section>
+            
+            <div id="texto-footer">
+            PANADERIA DE VEGA PYTXY & MARTA
+          
+       <div class="footer-link" ><a href="https://instagram.com/pytxypana?igshid=YTQwZjQ0NmI0OA="><h5>@pytxypana</h5>
+        <img src='https://i.postimg.cc/PCf8zFQc/instagram-png.jpg' height="50px" alt='instagram-png'/></a>
+       </div>
+
+       <div class="buttons">
+          <button class="item">
+         <a href="https://docs.google.com/document/d/19tQk6pnaFuqD2M-Sjt69c6kqGLEOOjxvFKleeU0j_uo/edit?usp=sharing">Preguntitas</a>
+        
+        </div>
+        <div class="buttons">
+        <button class="item">
+          <a href="https://docs.google.com/document/d/1OQngsJ2K-k29ehdWy1HeLozpGJFzHobrsygyvvmib3o/edit?usp=sharing">Privacidad</a>
+        
+      <div class="wrapper">
+          <div class="buttons1">
+            <button class="item">
+
+            <a href="https://docs.google.com/document/d/1UbrsecVBReKRWbCE-iUJzHpi4y5hPSHMnt4TtwpQpTQ/edit?usp=sharing">Cookies</a>
+          </div>
+          <div class="i">
+          <a href="mailto:pytxy34@gmail.com? Subject=contactar con usted">Contactar por email</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1.33em" height="1em" viewBox="0 0 256 193">
+           <path fill="#4285f4" d="M58.182 192.05V93.14L27.507 65.077L0 49.504v125.091c0 9.658 7.825 17.455 17.455 17.455z" />
+           <path fill="#34a853" d="M197.818 192.05h40.727c9.659 0 17.455-7.826 17.455-17.455V49.505l-31.156 17.837l-27.026 25.798z" />
+           <path fill="#ea4335" d="m58.182 93.14l-4.174-38.647l4.174-36.989L128 69.868l69.818-52.364l4.669 34.992l-4.669 40.644L128 145.504z" />
+           <path fill="#fbbc04" d="M197.818 17.504V93.14L256 49.504V26.231c0-21.585-24.64-33.89-41.89-20.945z" />
+           <path fill="#c5221f" d="m0 49.504l26.759 20.07L58.182 93.14V17.504L41.89 5.286C24.61-7.66 0 4.646 0 26.23z" />
+         </svg></a>
+        </div>
+          <div class="ft-main-item">
+            <details id="contenedor2">
+            <summary><p>ENCUESTA</p></summary>
+            
+              <form
+              enctype="text/plain" action="mailto:pytxy34@gmail.com" method="post">
+            
+             <h2>AYUDAME A MEJORAR</h2> 
+             <form id="form">
+              <div class="form-control">
+                 <label for="nombre"> Nombre:</label>
+                 <input type="text" name="nombre" placeholder="Introduce tu nombre"/>
+              </div>
+          
+              <div class="form-control">
+                  <label for="e-mail" >Email:</label>
+              
+              <input type="e-mail" name="e-mail" placeholder="Introduce tu email"/>
+          </div>
+              <div class="form-control">
+                  <label for="año de nacimiento" id="label-edad">Año de nacimiento:</label>
+                  <select name="año de nacimiento" id="role">
+                    <option value=""></option>
+                      <option value="2010">2010</option>
+                      <option value="2009">2009</option>
+                      <option value="2008">2008</option>
+                      <option value="2007">2007</option>
+                      <option value="2006">2006</option>
+                      <option value="2005">2005</option>
+                      <option value="2004">2004</option>
+                      <option value="2003">2003</option>
+                      <option value="2002">2002</option>
+                      <option value="2001">2001</option>
+                      <option value="2000">2000</option>
+                      <option value="1999">1999</option>
+                      <option value="1998">1998</option>
+                      <option value="1997">1997</option>
+                      <option value="1996">1996</option>
+                      <option value="1995">1995</option>
+                      <option value="1994">1994</option>
+                      <option value="1993">1993</option>
+                      <option value="1992">1992</option>
+                      <option value="1991">1991</option>
+                      <option value="1990">1990</option>
+                      <option value="1989">1989</option>
+                      <option value="1988">1988</option>
+                      <option value="1987">1987</option>
+                      <option value="1986">1986</option>
+                      <option value="1985">1985</option>
+                      <option value="1984">1984</option>
+                      <option value="1983">1983</option>
+                      <option value="1982">1982</option>
+                      <option value="1981">1981</option>
+                      <option value="1980">1980</option>
+                      <option value="1979">1979</option>
+                      <option value="1978">1978</option>
+                      <option value="1977">1977</option>
+                      <option value="1976">1976</option>
+                      <option value="1975">1975</option>
+                      <option value="1974">1974</option>
+                      <option value="1973">1973</option>
+                      <option value="1972">1972</option>
+                      
+
+                   </select>
+              </div>
+              <div class="form-control">
+                  <label for="profesion" id="label-role">¿Que haces en tu vida?</label>
+               <select name="profesion" id="role">
+                <option value=""></option>
+                  <option value="estudiante">Estudiante</option>
+                  <option value="vago">Vago</option>
+                  <option value="profesional">esclavo</option>
+                  <option value="jubilado">jubilado</option>
+               </select>
+              </div>
+              <div class="form-control">
+                 <label>
+                 ¿Recomendarias esta parida a alguien?
+                 </label>
+                 <label for="recomendado-1">
+                  <select name="recomendado-1" id="role">
+                  <option value=""></option>
+                  <option value="si">si</option>
+                  <option value="no">no</option>
+                  <option value="depende">depende</option>
+                  <option value="ni a mi peor enemigo">ni a mi peor enemigo</option>
+               </select>
+               
+                 
+              </div>
+              <div class="form-control">
+                  <label>¿Que tipo de pan es tu favorito?<small> </label> <label for="ocupacion">
+                      <select name="ocupacion" id="role">
+                      <option value=""></option>
+                      <option value="Hogaza">Hogaza</option>
+                      <option value="Barra rustica">Barra rustica</option>
+                      <option value=">Barra normal">Barra normal</option>
+                      <option value="Bagette">Bagette</option>
+                   </select>
+                   
+                 
+                  <div class="form-control">
+                      <label for="comentarios">
+                          COMENTARIOS
+                      </label>
+                      <textarea name="comentario" id="comentario" placeholder="suelta la parida que quieras"></textarea>
+                  </div>
+                  <p><input type="submit" value="ENVIAR"/>  
+                  <input type="reset" value="BORRAR Y EMPEZAR"/> </p>
+                 
+              </form>
+          </form>
+          <div class="valoracion">
+            <input id="radio1" type="radio" name="estrellas" value="5"><!--
+            --><label for="radio1">★</label><!--
+            --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+            --><label for="radio2">★</label><!--
+            --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+            --><label for="radio3">★</label><!--
+            --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+            --><label for="radio4">★</label><!--
+            --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+            --><label for="radio5">★</label>
+          </div>
+          
+            
+           </br>
+           <p id="t"> 
+            <h1> <a href="tel:+34638703618">638703618</a></h1>
+            <a href="https://wa.me/34638703618/?text=Hola, puedes ayudarme?" target="_blank">
+              <img src="https://i.postimg.cc/PPbFRGXf/WHATSAPP-png.jpg" >
+             </p>
+          
+           
+      
+    </div>
+  </div>
+</div>
+    </footer>
+      <br></br>
+      <script>
+   const slides = document.querySelector('.slides');
+   const slide = document.querySelectorAll('.slide');
+   const nextButton = document.getElementById('next');
+   const prevButton = document.getElementById('prev');
+   
+   let currentIndex = 0;
+   
+   function updateSlides() {
+       const offset = -currentIndex * 100;
+       slides.style.transform = `translateX(${offset}%)`;
+   }
+   
+   nextButton.addEventListener('click', () => {
+       currentIndex = (currentIndex + 1) % slide.length;
+       updateSlides();
+   });
+   
+   prevButton.addEventListener('click', () => {
+       currentIndex = (currentIndex - 1 + slide.length) % slide.length;
+       updateSlides();
+   });
+    
+  </script>  
+</body> 
+</html>                 
+        
